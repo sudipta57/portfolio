@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock title %}
+{% load static %}
+
+{% block body %}
+    {% comment %} <div class="container"> 
+    {% comment %} <div class="sidebar">
+        <!-- Sudipta -->
+        <nav>
+            <ul>
+                <li> <a href="/">Home</a> </li>
+                <li> <a href="intro.html"> My intro</a></li>
+                <li> <a href="services.html">Services</a></li>
+                <li> <a href="blog.html"> Blog</a></li>
+                <li> <a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div> {% endcomment %}
+    <div class="main">
+      <div class="info">
+        <div class="dev-info">
+            <div class="hello">Hi i am </div>
+            <div class="name">SuDiPtA</div>
+            <div class="about">Developer, Enterpreneur, Trader</div>
+            <div class=" more-about ">I am a Developer, and i love to drink coffee. i live in west-bengal. I want to be a good softwere engeneer.</div>
+
+            <div class="button">
+             <a href="{% static 'cv.txt' %}" target="_blank">  <button class="btn">Download CV</button></a> 
+              <a href="/contact">  <button class="btn">Contact Me</button></a>
+            </div>
+
+        </div>
+        {% comment %} <div class="dev-pic" style="top: 90px;"><img src="{% static '' %}" alt="Sudipta"></div> {% endcomment %}
+      </div>
+    </div>
+{% comment %} </div> {% endcomment %}
+{% endblock body %}

@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-repeat: no-repeat;
+  background-size: 1024px 511px;
+  background-position: top;
+  background-attachment: fixed;
+}
+/* .sidebar {
+  background-color: rgb(198, 198, 198);
+  width: 200px;
+  font-weight: bold;
+}
+.sidebar nav {
+  padding: 36px;
+  font-size: 20px;
+  height: 100vh;
+}
+.sidebar nav ul li {
+  list-style: none;
+  padding-top: 21px;
+  padding-bottom: 25px;
+}
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: black;
+} */
+.main {
+  width: 90vw;
+}
+/* .container {
+  display: flex;
+} */
+.info {
+  height: 56vh;
+  display: flex;
+  width: 80vw;
+  margin: 154px auto;
+  justify-content: space-around;
+}
+.dev-pic img {
+  width: 308px;
+  position: absolute;
+  top: 86px;
+  right: 0px;
+  height: 56vh;
+}
+.dev-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Source Code Pro", monospace;
+}
+.hello {
+  font-size: 65px;
+}
+.name {
+  font-size: 60px;
+  color: orangered;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
+}
+.about {
+  font-size: 40px;
+}
+.more-about {
+  font-size: 22px;
+  margin-top: 51px;
+  font-weight: bold;
+}
+.btn {
+  margin-top: 36px;
+  border-radius: 17px;
+  padding: 10px;
+  color: white;
+  background-color: dodgerblue;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.btn-sm {
+  font-size: 11px;
+  margin-top: 11px;
+}
+.btn:hover {
+  background-color: white;
+  color: dodgerblue;
+}
+.nav-btn{
+  
+  
+    margin-top: 16px;
+    font-size: 8px;
+    margin-left: 11px;
+    padding: -10px 10px;
+}
+.nav-item{
+  font-size: 20px;
+  transition: .4s;
+  margin: 0 10px;
+}
+.nav-item:hover{
+  background-color: orangered;
+  border-radius: 16px;
+}
+.contact-form {
+  font-family: "Source Code Pro", monospace;
+  padding: 0 34px;
+}
+.contact-form h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-top: 125px;
+  padding-bottom: 63px;
+}
+.mb-3 {
+  font-weight: bold;
+  padding: 12px 0;
+}
+#emailHelp {
+  font-size: 12px;
+  padding: 12px 0;
+  color: midnightblue;
+  margin: 0 5px;
+}
+
+.blog-item {
+  margin: 20px;
+}
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.blog-item {
+  font-family: "Source Code Pro", monospace;
+}
+h1 {
+  margin: 50px 0;
+}
+
+.intro h1 {
+  margin: 12px;
+}
+.intro h2 {
+  margin: 12px;
+}
+.intro p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.skill-container {
+  margin: 22px;
+}
+.skill {
+  width: 1100px;
+  height: 8px;
+  margin: 31px 0;
+  background-color: red;
+    font-family: "Source Code Pro", monospace;
+
+}
+.skill-1 {
+  width: 750px;
+  height: 8px;
+  margin: 31px 0;
+  background-color: red;
+    font-family: "Source Code Pro", monospace;
+
+}
+.skill-2 {
+  width: 500px;
+  height: 8px;
+  margin: 31px 0;
+  background-color: red;
+    font-family: "Source Code Pro", monospace;
+
+}
+.skill-3{
+  width: 600px;
+  height: 8px;
+  margin: 31px 0;
+  background-color: red;
+    font-family: "Source Code Pro", monospace;
+
+}
+.skill-4{
+  width: 700px;
+  height: 8px;
+  margin: 31px 0;
+  background-color: red;
+}

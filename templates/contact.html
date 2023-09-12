@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title %}
+Contact
+{% endblock title %}
+{% load static %}
+
+{% block body %}
+    {% comment %} <div class="container"> {% endcomment %}
+      {% comment %} <div class="sidebar">
+        <!-- Sudipta -->
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="intro.html"> My intro</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html"> Blog</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div> {% endcomment %}
+      <div class="main">
+        <div class="contact-form">
+          <h1>Contact me for work/general Enquiries</h1>
+
+          <form method="post" action="{% url 'contact' %}">
+            {% csrf_token %}
+            <div class="mb-3">
+              <label for="client-email" class="form-label" >Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="client-email"
+                aria-describedby="emailHelp"
+                name="name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="client-email" class="form-label" >Email address</label>
+              <input
+              name="email"
+                type="email"
+                class="form-control"
+                id="client-email"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email & phone with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="client-phone" class="form-label">phone</label>
+              <input  name="phone" type="phone" class="form-control" id="client-phone" />
+            </div>
+            <div class="mb-3">
+              <label for="client-email" class="form-label">Enquiry</label>
+              <input
+              name="enquiry"
+                type="text"
+                class="form-control"
+                id="client-email"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="isclient" />
+              <label class="form-check-label" for="isclient"
+                >I want you to work on a project with me</label
+              >
+            </div>
+      
+            
+            <button type="submit " class="btn btn-primary btn-sm">Submit</button>
+          </form>
+        </div>
+      </div>
+    {% comment %} </div> {% endcomment %}
+    {% endblock body %}
